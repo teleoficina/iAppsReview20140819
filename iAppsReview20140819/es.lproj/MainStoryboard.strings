@@ -1,0 +1,132 @@
+
+/* Class = "IBUITextField"; placeholder = "user@example.com"; ObjectID = "06e-dO-lV7"; */
+"06e-dO-lV7.placeholder" = "user@example.com";
+
+/* Class = "IBUINavigationItem"; title = "My Reviews"; ObjectID = "1ME-jw-cZZ"; */
+"1ME-jw-cZZ.title" = "Mis valoraciones";
+
+/* Class = "IBUIButton"; normalTitle = "Sign up"; ObjectID = "58X-1q-B91"; */
+"58X-1q-B91.normalTitle" = "Signear up";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "6Oj-2m-uQF"; */
+"6Oj-2m-uQF.text" = "Lorem fistrum nisi quis incididunt qui sed ullamco torpedo minim ullamco. Sexuarl qué dise usteer ad apetecan benemeritaar ahorarr voluptate a gramenawer adipisicing. La caidita sed no puedor officia. Ex hasta luego Lucas incididunt me cago en tus muelas tiene musho peligro benemeritaar minim. Apetecan occaecat et veniam apetecan incididunt commodo ut nisi. Sed diodenoo llevame al sircoo ese que llega commodo elit dolor amatomaa quis.";
+
+/* Class = "IBUILabel"; text = "App Category"; ObjectID = "6zo-DY-29n"; */
+"6zo-DY-29n.text" = "App Category";
+
+/* Class = "IBUILabel"; text = "Enter your feedback below..."; ObjectID = "8aA-2e-A9p"; */
+"8aA-2e-A9p.text" = "Enter your feedback below...";
+
+/* Class = "IBUILabel"; text = "Email address"; ObjectID = "Bq0-ec-1Sx"; */
+"Bq0-ec-1Sx.text" = "Email address";
+
+/* Class = "IBUILabel"; text = "Select..."; ObjectID = "CEd-U0-7lh"; */
+"CEd-U0-7lh.text" = "Seleccionar...";
+
+/* Class = "IBUILabel"; text = "Read online Reviews"; ObjectID = "Dl8-bG-Pe9"; */
+"Dl8-bG-Pe9.text" = "Leer los comentarios online";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Your Reviews"; ObjectID = "F7n-7R-YyN"; */
+"F7n-7R-YyN.headerTitle" = "Tus comentarios";
+
+/* Class = "IBUILabel"; text = "Games"; ObjectID = "GOk-Le-jpw"; */
+"GOk-Le-jpw.text" = "Juegoxxx";
+
+/* Class = "IBUILabel"; text = "Space Ninja"; ObjectID = "Hnm-bk-okQ"; */
+"Hnm-bk-okQ.text" = "Space Ninja";
+
+/* Class = "IBUIButton"; normalTitle = "Send Feedback"; ObjectID = "Hsf-KV-giD"; */
+"Hsf-KV-giD.normalTitle" = "Send Feedback";
+
+/* Class = "IBUINavigationItem"; title = "Review"; ObjectID = "JAA-Z2-Yab"; */
+"JAA-Z2-Yab.title" = "Review";
+
+/* Class = "IBUITextField"; placeholder = "Required"; ObjectID = "KZr-qB-zci"; */
+"KZr-qB-zci.placeholder" = "Required";
+
+/* Class = "IBUINavigationItem"; title = "Feedback"; ObjectID = "Mtj-fO-nlO"; */
+"Mtj-fO-nlO.title" = "Feedback";
+
+/* Class = "IBUILabel"; text = "Write a Review"; ObjectID = "Mwz-Tn-jHm"; */
+"Mwz-Tn-jHm.text" = "Write a Review";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "NLl-5y-7xU"; */
+"NLl-5y-7xU.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "IBUILabel"; text = "Entertainment"; ObjectID = "NXf-xM-Ua3"; */
+"NXf-xM-Ua3.text" = "Entertainment";
+
+/* Class = "IBUINavigationItem"; title = "App Category"; ObjectID = "Odf-ti-T3a"; */
+"Odf-ti-T3a.title" = "App Category";
+
+/* Class = "IBUILabel"; text = "Settings & Feedback"; ObjectID = "PlG-zr-PBV"; */
+"PlG-zr-PBV.text" = "Settings & Feedback";
+
+/* Class = "IBUIButton"; normalTitle = "Post"; ObjectID = "RSj-8X-cYO"; */
+"RSj-8X-cYO.normalTitle" = "Post";
+
+/* Class = "IBUILabel"; text = "Doodle Jump"; ObjectID = "SUh-26-rVW"; */
+"SUh-26-rVW.text" = "Doodle Jump";
+
+/* Class = "IBUINavigationItem"; title = "Online Reviews"; ObjectID = "TUT-1S-c8O"; */
+"TUT-1S-c8O.title" = "Online Reviews";
+
+/* Class = "IBUILabel"; text = "Meteor Blitz"; ObjectID = "UeB-Te-csQ"; */
+"UeB-Te-csQ.text" = "Meteor Blitz";
+
+/* Class = "IBUILabel"; text = "Doodle Jump"; ObjectID = "Umz-so-Hqc"; */
+"Umz-so-Hqc.text" = "Doodle Jump";
+
+/* Class = "IBUILabel"; text = "Don't have a account yet ?  Sign up !"; ObjectID = "Uw9-r2-hqt"; */
+"Uw9-r2-hqt.text" = "Don't have a account yet ?  Sign up !";
+
+/* Class = "IBUINavigationItem"; title = "Settings"; ObjectID = "ViH-4l-BYE"; */
+"ViH-4l-BYE.title" = "Settings";
+
+/* Class = "IBUILabel"; text = "Doodle Jump"; ObjectID = "XtX-4u-8Oe"; */
+"XtX-4u-8Oe.text" = "Doodle Jump";
+
+/* Class = "IBUITableViewSection"; headerTitle = "settings"; ObjectID = "Z8W-qe-Y0W"; */
+"Z8W-qe-Y0W.headerTitle" = "settings";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Online Reviews"; ObjectID = "aRB-Rx-DL7"; */
+"aRB-Rx-DL7.headerTitle" = "Online Reviews";
+
+/* Class = "IBUILabel"; text = "App Category"; ObjectID = "cTa-Nv-PaW"; */
+"cTa-Nv-PaW.text" = "App Category";
+
+/* Class = "IBUILabel"; text = "Password"; ObjectID = "e0r-j1-H0e"; */
+"e0r-j1-H0e.text" = "Password";
+
+/* Class = "IBUILabel"; text = "Read Your Reviews"; ObjectID = "e88-Ab-CTt"; */
+"e88-Ab-CTt.text" = "Read Your Reviews";
+
+/* Class = "IBUINavigationItem"; title = "Write Review"; ObjectID = "gA6-MB-lVa"; */
+"gA6-MB-lVa.title" = "Escribir una opinión";
+
+/* Class = "IBUILabel"; text = "Spider"; ObjectID = "jHp-vm-IsN"; */
+"jHp-vm-IsN.text" = "Spider";
+
+/* Class = "IBUIButton"; normalTitle = "Log in"; ObjectID = "mhg-O7-nNm"; */
+"mhg-O7-nNm.normalTitle" = "Log in";
+
+/* Class = "IBUILabel"; text = "Peggle"; ObjectID = "su5-jc-J2u"; */
+"su5-jc-J2u.text" = "Peggle";
+
+/* Class = "IBUITextField"; placeholder = "App Name"; ObjectID = "tNH-WQ-hmS"; */
+"tNH-WQ-hmS.placeholder" = "App Name";
+
+/* Class = "IBUILabel"; text = "Pac Man CE"; ObjectID = "tsR-AF-RDd"; */
+"tsR-AF-RDd.text" = "Pac Man CE";
+
+/* Class = "IBUINavigationItem"; title = "iAppsReview 20140819"; ObjectID = "vf9-Oh-9CX"; */
+"vf9-Oh-9CX.title" = "iAppsReview 20140819";
+
+/* Class = "IBUILabel"; text = "Entertainment"; ObjectID = "xNX-51-ZLM"; */
+"xNX-51-ZLM.text" = "Entertainment";
+
+/* Class = "IBUIBarButtonItem"; title = "Edit"; ObjectID = "xcg-Sq-NI4"; */
+"xcg-Sq-NI4.title" = "Edit";
+
+/* Class = "IBUIButton"; normalTitle = "Provide Feedback"; ObjectID = "yVJ-om-alN"; */
+"yVJ-om-alN.normalTitle" = "Provide Feedback";
