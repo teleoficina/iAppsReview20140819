@@ -20,6 +20,12 @@
     NSURL *imageURL;
     ReviewBusinessController *reviewBC;
     NSUInteger appCategoryID;
+    
+    //branch-001 20141119
+    CLLocationManager *manager;
+    CLGeocoder *geocoder;
+    CLPlacemark *placemark;
+    //end branch-001
 }
 
 
@@ -39,7 +45,10 @@
     
     reviewBC = [[ReviewBusinessController alloc] init];
     
-    // Do any additional setup after loading the view.
+    //branch-001 20141119
+    manager = [[CLLocationManager alloc] init];
+    geocoder = [[CLGeocoder alloc] init];
+    //end branch-001
 }
 
 // JSO
@@ -178,5 +187,69 @@
 
 
 
+// branch-001 20141119
+- (IBAction)getAddressButton:(id)sender {
+    self.addressLabel.text = @"Pero qué hases \ndesgraciao !!";
+    manager.delegate = self;
+    manager.desiredAccuracy = kCLLocationAccuracyBest;
+    
+    // obtener ubicación GPS
+    NSLog(@"Inicializando captura gps...");
+    [manager startUpdatingLocation];
+}
+
+
+#pragma mark CLLocationManagerDelegate Methods
+// branch-001 20141119
+-(void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    [self setHapetao:TRUE];
+    NSLog(@"Error: %@", error);
+    NSLog(@"Failed to get location! : (");
+    [manager stopUpdatingLocation];
+}
+
+
+// branch-001 20141119
+-(void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+    
+    NSError *habrapetao = [[NSError alloc]init];
+    NSMutableDictionary *detallesHabraPetao = [[NSMutableDictionary alloc] init];
+    
+    NSLog(@"Location: %@", newLocation);
+    CLLocation *currentLocation = newLocation;
+    
+    if (currentLocation != nil) {
+        [self setMyAddress:[NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude]];
+        [self setMyLongitude:[NSString stringWithFormat:@"%.8f", currentLocation.coordinate.longitude]];
+        
+    }
+    
+    [geocoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray *placemarks, NSError *error) {
+        
+        if (error == nil && [placemarks count] > 0) {
+            
+            placemark = [placemarks lastObject];
+            
+            [self setMyAddress: [NSString stringWithFormat:@"%@ %@\n%@ %@\n%@ %@\n",
+                                 placemark.subThoroughfare, placemark.thoroughfare,
+                                 placemark.postalCode, placemark.locality,
+                                 placemark.administrativeArea,
+                                 placemark.country]];
+            [self setHapetao:false];
+            self.addressLabel.text = [self myAddress];
+            
+        } else {
+            NSLog(@"Error debugDescription: %@", error.debugDescription);
+            [detallesHabraPetao setValue:@"nohaygps" forKey:NSLocalizedDescriptionKey];
+            [self setHapetao:true];
+        }
+    }
+     ];
+    
+    [manager stopUpdatingLocation];
+    
+    habrapetao = [NSError errorWithDomain:@"nohaygps" code:200 userInfo:@{NSLocalizedDescriptionKey:@"Something went wrong"}];
+    
+}
 
 @end

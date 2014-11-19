@@ -143,7 +143,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="sectionIndexBackgroundColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="j5c-Ud-owI">
-                            <rect key="frame" x="0.0" y="153" width="320" height="328"/>
+                            <rect key="frame" x="0.0" y="153" width="320" height="400"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gUw-Qe-Lyt" customClass="mmStarRating">
@@ -193,6 +193,22 @@
                                         <action selector="postReview:" destination="hWm-hz-mgA" eventType="touchUpInside" id="eyT-ZY-3KQ"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFO-ZB-se1">
+                                    <rect key="frame" x="101" y="309" width="133" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Get GPS position...">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="getAddressButton:" destination="hWm-hz-mgA" eventType="touchUpInside" id="uEQ-SN-Rrs"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="...aquí saldrá tu dir..." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ab7-xm-fdz">
+                                    <rect key="frame" x="20" y="339" width="280" height="52"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
                             <gestureRecognizers/>
@@ -246,6 +262,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addressLabel" destination="ab7-xm-fdz" id="k60-VW-5bp"/>
                         <outlet property="appCategoryCell" destination="edM-o8-aO4" id="aRi-yU-0Qk"/>
                         <outlet property="btnPost" destination="RSj-8X-cYO" id="VCt-Fe-L7j"/>
                         <outlet property="btnShare" destination="RFR-gx-ep2" id="TGc-hm-BEb"/>

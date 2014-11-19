@@ -14,10 +14,15 @@
 #import "AppCategoryEntity.h"
 #import "AppCategoryViewController.h"
 
+//branch-001 añadir el framework de localización y métodos delegate "CLLocationManagerDelegate"
+#import <CoreLocation/CoreLocation.h>
+//end branch-001
+
 @interface WriteReviewViewController : UITableViewController
     <UIImagePickerControllerDelegate,
      UINavigationControllerDelegate,
      UITextViewDelegate,
+     CLLocationManagerDelegate,
      AppCategoryDelegate>
 
 - (IBAction)shareReview:(id)sender;
@@ -32,5 +37,17 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnPost;
 @property (weak, nonatomic) IBOutlet mmStarRating *starRating;
 @property (weak, nonatomic) IBOutlet UITableViewCell *appCategoryCell;
+
+//branch-001 20141113
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
+- (IBAction)getAddressButton:(id)sender;
+
+//branch-001 20141119
+@property (weak, nonatomic) NSString *myAddress;
+@property (weak, nonatomic) NSString *myLatitude;
+@property (weak, nonatomic) NSString *myLongitude;
+
+@property (nonatomic, assign) BOOL hapetao;
+//end branch-001
 
 @end
