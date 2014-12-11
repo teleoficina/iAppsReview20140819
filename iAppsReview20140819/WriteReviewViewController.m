@@ -169,6 +169,7 @@
     reviewEntity.appName = self.txtAppName.text;
     reviewEntity.comments = self.tvwReview.text;
     reviewEntity.image = [imageURL absoluteString];
+    reviewEntity.addressLabelGPS = self.addressLabel.text;
     
     // Save the ReviewEntity
     [reviewBC saveEntities];
