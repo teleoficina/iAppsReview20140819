@@ -64,7 +64,7 @@
 		BF7C2A1819B46D3700BB3553 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7C2A1619B46D3700BB3553 /* star.png */; };
 		BF7C2A1A19B46D4A00BB3553 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7C2A1919B46D4A00BB3553 /* user.png */; };
 		BF7C2A1C19B46D5500BB3553 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7C2A1B19B46D5500BB3553 /* white.png */; };
-		BF8ECF951A38AE77008D39F9 /* ReviewEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8ECF941A38AE77008D39F9 /* ReviewEntity.m */; };
+		BF878C6E1A39AFF10056C4C1 /* ReviewEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BF878C6D1A39AFF10056C4C1 /* ReviewEntity.m */; };
 		BFFD5F1419B0C9F1003F99D2 /* mmStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD5F1219B0C9F1003F99D2 /* mmStarRating.m */; };
 /* End PBXBuildFile section */
 
@@ -161,8 +161,9 @@
 		BF7C2A1919B46D4A00BB3553 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		BF7C2A1B19B46D5500BB3553 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		BF878C651A39904C0056C4C1 /* iAppsReview 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "iAppsReview 2.xcdatamodel"; sourceTree = "<group>"; };
-		BF8ECF931A38AE77008D39F9 /* ReviewEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewEntity.h; sourceTree = "<group>"; };
-		BF8ECF941A38AE77008D39F9 /* ReviewEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewEntity.m; sourceTree = "<group>"; };
+		BF878C681A39ABE40056C4C1 /* iAppsReview 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "iAppsReview 3.xcdatamodel"; sourceTree = "<group>"; };
+		BF878C6C1A39AFF10056C4C1 /* ReviewEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewEntity.h; sourceTree = "<group>"; };
+		BF878C6D1A39AFF10056C4C1 /* ReviewEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewEntity.m; sourceTree = "<group>"; };
 		BFFD5F1119B0C9F1003F99D2 /* mmStarRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmStarRating.h; sourceTree = "<group>"; };
 		BFFD5F1219B0C9F1003F99D2 /* mmStarRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmStarRating.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -329,8 +330,8 @@
 				01F5716A19A63141003CC6A3 /* mmBusinessObject.h */,
 				01F5716B19A63141003CC6A3 /* mmBusinessObject.m */,
 				01F5714619A60A14003CC6A3 /* iAppsReview20140819.xcdatamodeld */,
-				BF8ECF931A38AE77008D39F9 /* ReviewEntity.h */,
-				BF8ECF941A38AE77008D39F9 /* ReviewEntity.m */,
+				BF878C6C1A39AFF10056C4C1 /* ReviewEntity.h */,
+				BF878C6D1A39AFF10056C4C1 /* ReviewEntity.m */,
 				01F5715B19A62ECC003CC6A3 /* AppCategoryEntity.h */,
 				01F5715C19A62ECC003CC6A3 /* AppCategoryEntity.m */,
 				01F5717319A637D9003CC6A3 /* AppCategoryBusinessController.h */,
@@ -478,7 +479,7 @@
 				01BECB0A19A35AF800E6F7BB /* AppDelegate.m in Sources */,
 				BF43319319D1B4FA007ADA34 /* NewItemViewController.m in Sources */,
 				01F5717B19A63A9F003CC6A3 /* AppCategoryViewController.m in Sources */,
-				BF8ECF951A38AE77008D39F9 /* ReviewEntity.m in Sources */,
+				BF878C6E1A39AFF10056C4C1 /* ReviewEntity.m in Sources */,
 				0187846E19AB342B007BC94D /* MyReviewViewController.m in Sources */,
 				01F5716F19A6315B003CC6A3 /* ABusinessObject.m in Sources */,
 				01F5717219A6375A003CC6A3 /* ReviewBusinessController.m in Sources */,
@@ -739,10 +740,11 @@
 		01F5714619A60A14003CC6A3 /* iAppsReview20140819.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				BF878C681A39ABE40056C4C1 /* iAppsReview 3.xcdatamodel */,
 				BF878C651A39904C0056C4C1 /* iAppsReview 2.xcdatamodel */,
 				01F5714719A60A14003CC6A3 /* iAppsReview20140819.xcdatamodel */,
 			);
-			currentVersion = BF878C651A39904C0056C4C1 /* iAppsReview 2.xcdatamodel */;
+			currentVersion = BF878C681A39ABE40056C4C1 /* iAppsReview 3.xcdatamodel */;
 			path = iAppsReview20140819.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

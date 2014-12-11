@@ -2,7 +2,7 @@
 //  ReviewEntity.m
 //  iAppsReview20140819
 //
-//  Created by jordi sanchez on 10/12/14.
+//  Created by jordi sanchez on 11/12/14.
 //  Copyright (c) 2014 teleOficina Services. All rights reserved.
 //
 
@@ -11,6 +11,7 @@
 
 @implementation ReviewEntity
 
+@dynamic addressLabelGPS;
 @dynamic appName;
 @dynamic categoryID;
 @dynamic comments;
@@ -18,6 +19,7 @@
 @dynamic isPosted;
 @dynamic rating;
 @dynamic userID;
-@dynamic addressLabelGPS;
+@dynamic gpsLatitude;
+@dynamic gpsLongitude;
 
 @end

@@ -26,6 +26,10 @@
     CLGeocoder *geocoder;
     CLPlacemark *placemark;
     //end branch-001
+    // branch-002 21041211
+    NSString *myLongitud;
+    NSString *myLatitud;
+    // end branch-002
 }
 
 
@@ -160,6 +164,7 @@
 }
 
 
+// JSO Grabamos en la bbdd...
 - (IBAction)postReview:(id)sender {
     ReviewEntity *reviewEntity = (ReviewEntity *)[reviewBC createEntity];
     reviewEntity.categoryID = appCategoryID; //ya no está harcoded...
@@ -169,7 +174,11 @@
     reviewEntity.appName = self.txtAppName.text;
     reviewEntity.comments = self.tvwReview.text;
     reviewEntity.image = [imageURL absoluteString];
+    // branch-001
     reviewEntity.addressLabelGPS = self.addressLabel.text;
+    // branch-002
+    reviewEntity.gpsLatitude = myLatitud;
+    reviewEntity.gpsLongitude = myLongitud;
     
     // Save the ReviewEntity
     [reviewBC saveEntities];
@@ -219,10 +228,11 @@
     NSLog(@"Location: %@", newLocation);
     CLLocation *currentLocation = newLocation;
     
+    // obtenemos las coordenadas...
     if (currentLocation != nil) {
-        [self setMyAddress:[NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude]];
-        [self setMyLongitude:[NSString stringWithFormat:@"%.8f", currentLocation.coordinate.longitude]];
-        
+        myLatitud = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude];
+        myLongitud = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.longitude];
+
     }
     
     [geocoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray *placemarks, NSError *error) {
