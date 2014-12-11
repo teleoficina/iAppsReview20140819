@@ -27,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet mmStarRating *starRating;
 @property (weak, nonatomic) IBOutlet UIImageView *imgThumbNail;
 @property (weak, nonatomic) IBOutlet UITextView *txtReview;
+@property (weak, nonatomic) IBOutlet UITextView *txtAddresLabel;
 
 // para utilizarlos en la consulta de la tabla category
 

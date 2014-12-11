@@ -42,6 +42,7 @@ NSMutableArray *appCategoryList;
     
     self.starRating.rating = self.reviewEntity.rating;
     self.txtReview.text = self.reviewEntity.comments;
+    self.txtAddresLabel.text = self.reviewEntity.addressLabelGPS;
     
     // JSO Get the image from the photo library and display it in the image view
     if (self.reviewEntity.image) {
