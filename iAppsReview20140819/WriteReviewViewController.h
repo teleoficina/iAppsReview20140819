@@ -21,6 +21,7 @@
 @interface WriteReviewViewController : UITableViewController
     <UIImagePickerControllerDelegate,
      UINavigationControllerDelegate,
+     UIActionSheetDelegate,
      UITextViewDelegate,
      CLLocationManagerDelegate,
      AppCategoryDelegate>
@@ -49,5 +50,8 @@
 
 @property (nonatomic, assign) BOOL hapetao;
 //end branch-001
+
+//branch-003 20141212 Botón para hacer foto con la cámara o acceder al carrete
+- (IBAction)seleccionarOpcionFoto:(id)sender;
 
 @end

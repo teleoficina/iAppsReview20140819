@@ -21,7 +21,7 @@
     ReviewBusinessController *reviewBC;
     NSUInteger appCategoryID;
     
-    //branch-001 20141119
+    //branch-001 20141119 objetos para gestionar el gps
     CLLocationManager *manager;
     CLGeocoder *geocoder;
     CLPlacemark *placemark;
@@ -49,7 +49,7 @@
     
     reviewBC = [[ReviewBusinessController alloc] init];
     
-    //branch-001 20141119
+    //branch-001 20141119 Inicializamos el gps
     manager = [[CLLocationManager alloc] init];
     geocoder = [[CLGeocoder alloc] init];
     //end branch-001
@@ -80,22 +80,13 @@
     
 }
 
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)shareReview:(id)sender {
     NSString *reviewText = self.tvwReview.text;
@@ -106,42 +97,10 @@
     
 }
 
-- (IBAction)accessPhotoLibrary:(id)sender {
-    
-    // Create the image picker controller
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-    
-    // Set the image picker controller properties
-    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    
-    // Store a reference to the view controller in the delegate property
-    imagePicker.delegate = self;
-    
-    // Display the image picker controller
-    [self presentViewController:imagePicker animated:YES completion:nil];
-}
-
-
-
--(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-    // Get the image and store it in the image view
-    image = info[UIImagePickerControllerOriginalImage];
-    self.imgThumbNail.image = image;
-    
-    // Get the URL of the image
-    imageURL = info[UIImagePickerControllerReferenceURL];
-}
-
--(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 
 
 -(BOOL)isReadyToShare {
+
     // Check if either the text view or the text field is empty
     if (self.tvwReview.text.length == 0 ||
         self.txtAppName.text.length == 0 ||
@@ -195,6 +154,37 @@
     [self enableDisableControls];
 }
 
+
+// branch-003
+// Cuando se pulsa en la imagen "Add Image": Tomar foto o recuperarla del carrete
+- (IBAction)accessPhotoLibrary:(id)sender {
+    
+    // Create the image picker controller
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    // Set the image picker controller properties
+    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    // Store a reference to the view controller in the delegate property
+    imagePicker.delegate = self;
+    
+    // Display the image picker controller
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+// branch-003
+// Cuando se pulsa en el botón inferior seleccionar opción para hacer la foto
+- (IBAction)seleccionarOpcionFoto:(id)sender {
+    UIActionSheet *tomarFoto = [[UIActionSheet alloc]
+                                initWithTitle:nil
+                                delegate:self
+                                cancelButtonTitle:@"Cancelar"
+                                destructiveButtonTitle:nil
+                                otherButtonTitles:@"Hacer Foto", @"Seleccionar foto existente", nil
+                                ];
+    tomarFoto.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+    [tomarFoto showInView:[UIApplication sharedApplication].keyWindow];
+}
 
 
 // branch-001 20141119
@@ -262,5 +252,71 @@
     habrapetao = [NSError errorWithDomain:@"nohaygps" code:200 userInfo:@{NSLocalizedDescriptionKey:@"Something went wrong"}];
     
 }
+
+
+#pragma Mark - UIActionSheetDelegate
+// branch-003 método delegado tratamiento alternativas botón "take a fotu"
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if (buttonIndex == 0) {
+        // Levantar cámara
+        UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+        [imagePicker setModalPresentationStyle:UIModalPresentationCurrentContext];
+        [imagePicker setDelegate:self];
+        [imagePicker setAllowsEditing:YES];
+        [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+        
+        [self presentViewController:imagePicker animated:YES completion:nil];
+        
+    } else if (buttonIndex == 1) {
+        // Levantar Librería
+        UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+        [imagePicker setDelegate:self];
+        [imagePicker setAllowsEditing:YES];
+        [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+        
+        [self presentViewController:imagePicker animated:YES completion:nil];    }
+}
+
+
+// -----------
+#pragma mark - métodos delegate de UIImagePickerDelegate
+// branch-003 gestionar el acceso al carrete o a la cámara
+// ----- nuevo -------
+/*
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *imagenTomada = info[UIImagePickerControllerEditedImage];
+    self.imgThumbNail.image = imagenTomada;
+    
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    
+}
+*/
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+// --- original ----
+
+ -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+ {
+ [self dismissViewControllerAnimated:YES completion:nil];
+ 
+ // Get the image and store it in the image view
+ image = info[UIImagePickerControllerOriginalImage];
+ self.imgThumbNail.image = image;
+ 
+ // Get the URL of the image
+ imageURL = info[UIImagePickerControllerReferenceURL];
+ }
+/*
+ -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+ {
+ [self dismissViewControllerAnimated:YES completion:nil];
+ }
+ */
+
+// --------------
 
 @end
