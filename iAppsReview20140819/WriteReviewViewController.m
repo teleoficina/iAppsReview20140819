@@ -275,7 +275,8 @@
         [imagePicker setAllowsEditing:YES];
         [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
         
-        [self presentViewController:imagePicker animated:YES completion:nil];    }
+        [self presentViewController:imagePicker animated:YES completion:nil];
+    }
 }
 
 
@@ -303,13 +304,22 @@
  {
  [self dismissViewControllerAnimated:YES completion:nil];
  
+  
  // Get the image and store it in the image view
- image = info[UIImagePickerControllerOriginalImage];
+ //image = info[UIImagePickerControllerOriginalImage];
+ image = info[UIImagePickerControllerEditedImage];
+
+ // Branch-003-01 salvar imagen al carrete...
+ UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    
  self.imgThumbNail.image = image;
  
  // Get the URL of the image
  imageURL = info[UIImagePickerControllerReferenceURL];
+     
  }
+
+
 /*
  -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
  {

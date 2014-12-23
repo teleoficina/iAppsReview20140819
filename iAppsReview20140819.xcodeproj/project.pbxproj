@@ -40,7 +40,6 @@
 		01F5717519A637D9003CC6A3 /* AppCategoryBusinessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F5717419A637D9003CC6A3 /* AppCategoryBusinessController.m */; };
 		01F5717819A6386F003CC6A3 /* UserBusinessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F5717719A6386F003CC6A3 /* UserBusinessController.m */; };
 		01F5717B19A63A9F003CC6A3 /* AppCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F5717A19A63A9F003CC6A3 /* AppCategoryViewController.m */; };
-		01F5717F19A64985003CC6A3 /* iAppsReview20140819.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 01F5717E19A64985003CC6A3 /* iAppsReview20140819.sqlite */; };
 		BF054C071A1CBC420099892F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF054C061A1CBC420099892F /* CoreLocation.framework */; };
 		BF43319319D1B4FA007ADA34 /* NewItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF43319219D1B4FA007ADA34 /* NewItemViewController.m */; };
 		BF7C29F519B46CAB00BB3553 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7C29F319B46CAB00BB3553 /* pencil.png */; };
@@ -65,6 +64,8 @@
 		BF7C2A1A19B46D4A00BB3553 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7C2A1919B46D4A00BB3553 /* user.png */; };
 		BF7C2A1C19B46D5500BB3553 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7C2A1B19B46D5500BB3553 /* white.png */; };
 		BF878C6E1A39AFF10056C4C1 /* ReviewEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = BF878C6D1A39AFF10056C4C1 /* ReviewEntity.m */; };
+		BFA301021A419A9A00AF6597 /* BBDD-V0-iAppsReview20140819.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BFA301011A419A9A00AF6597 /* BBDD-V0-iAppsReview20140819.sqlite */; };
+		BFA301041A419AB700AF6597 /* iAppsReview20140819.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BFA301031A419AB700AF6597 /* iAppsReview20140819.sqlite */; };
 		BFFD5F1419B0C9F1003F99D2 /* mmStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFD5F1219B0C9F1003F99D2 /* mmStarRating.m */; };
 /* End PBXBuildFile section */
 
@@ -135,7 +136,6 @@
 		01F5717719A6386F003CC6A3 /* UserBusinessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserBusinessController.m; sourceTree = "<group>"; };
 		01F5717919A63A9F003CC6A3 /* AppCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCategoryViewController.h; sourceTree = "<group>"; };
 		01F5717A19A63A9F003CC6A3 /* AppCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCategoryViewController.m; sourceTree = "<group>"; };
-		01F5717E19A64985003CC6A3 /* iAppsReview20140819.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iAppsReview20140819.sqlite; sourceTree = "<group>"; };
 		BF054C061A1CBC420099892F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BF43319119D1B4FA007ADA34 /* NewItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewItemViewController.h; sourceTree = "<group>"; };
 		BF43319219D1B4FA007ADA34 /* NewItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewItemViewController.m; sourceTree = "<group>"; };
@@ -164,6 +164,8 @@
 		BF878C681A39ABE40056C4C1 /* iAppsReview 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "iAppsReview 3.xcdatamodel"; sourceTree = "<group>"; };
 		BF878C6C1A39AFF10056C4C1 /* ReviewEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewEntity.h; sourceTree = "<group>"; };
 		BF878C6D1A39AFF10056C4C1 /* ReviewEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewEntity.m; sourceTree = "<group>"; };
+		BFA301011A419A9A00AF6597 /* BBDD-V0-iAppsReview20140819.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BBDD-V0-iAppsReview20140819.sqlite"; sourceTree = "<group>"; };
+		BFA301031A419AB700AF6597 /* iAppsReview20140819.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = iAppsReview20140819.sqlite; sourceTree = "<group>"; };
 		BFFD5F1119B0C9F1003F99D2 /* mmStarRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mmStarRating.h; sourceTree = "<group>"; };
 		BFFD5F1219B0C9F1003F99D2 /* mmStarRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mmStarRating.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -272,6 +274,8 @@
 		01BECB0019A35AF800E6F7BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BFA301031A419AB700AF6597 /* iAppsReview20140819.sqlite */,
+				BFA301011A419A9A00AF6597 /* BBDD-V0-iAppsReview20140819.sqlite */,
 				BF7C2A1B19B46D5500BB3553 /* white.png */,
 				BF7C2A1919B46D4A00BB3553 /* user.png */,
 				BF7C2A1519B46D3700BB3553 /* SoundHound.png */,
@@ -294,7 +298,6 @@
 				BF7C29F319B46CAB00BB3553 /* pencil.png */,
 				BF7C29F419B46CAB00BB3553 /* pencil@2x.png */,
 				018D9C5819AE261200A8336D /* Localizable.strings */,
-				01F5717E19A64985003CC6A3 /* iAppsReview20140819.sqlite */,
 				018D9C5619AE1E7D00A8336D /* AddImage.png */,
 				01BECB0119A35AF800E6F7BB /* iAppsReview20140819-Info.plist */,
 				01BECB0219A35AF800E6F7BB /* InfoPlist.strings */,
@@ -428,8 +431,8 @@
 			files = (
 				BF7C2A1719B46D3700BB3553 /* SoundHound.png in Resources */,
 				BF7C2A0919B46CEF00BB3553 /* gear@2x.png in Resources */,
+				BFA301041A419AB700AF6597 /* iAppsReview20140819.sqlite in Resources */,
 				BF7C2A1C19B46D5500BB3553 /* white.png in Resources */,
-				01F5717F19A64985003CC6A3 /* iAppsReview20140819.sqlite in Resources */,
 				BF7C29F519B46CAB00BB3553 /* pencil.png in Resources */,
 				BF7C29FE19B46CD900BB3553 /* Default@2x.png in Resources */,
 				BF7C29FF19B46CD900BB3553 /* download.png in Resources */,
@@ -447,6 +450,7 @@
 				BF7C29F619B46CAB00BB3553 /* pencil@2x.png in Resources */,
 				BF7C2A0E19B46D0200BB3553 /* Icon-29@2x.png in Resources */,
 				018D9C5A19AE261200A8336D /* Localizable.strings in Resources */,
+				BFA301021A419A9A00AF6597 /* BBDD-V0-iAppsReview20140819.sqlite in Resources */,
 				BF7C2A1019B46D0200BB3553 /* Icon-60@2x.png in Resources */,
 				BF7C2A1419B46D1F00BB3553 /* readreview@2x.png in Resources */,
 				BF7C2A0719B46CEF00BB3553 /* fullstar.png in Resources */,
